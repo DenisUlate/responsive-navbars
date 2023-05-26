@@ -1,0 +1,158 @@
+/* fonts inport */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove list styles (bullet points) */
+ol,
+ul {
+	list-style: none;
+}
+
+/* Remove default block-level element styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/* Set fonts to ensure consistent rendering */
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Remove default hyperlink styles */
+a {
+	text-decoration: none;
+}
+
+/* Remove outline on focused elements */
+*:focus {
+	outline: none;
+}
+
+/* Optional: Add a border box to all elements for easier debugging  */
+/* * {
+	border: 1px solid red;
+} */
+/* ------------------------- STYLES -------------------------------- */
+body {
+	background: rgb(5, 20, 41);
+	background: linear-gradient(90deg, rgba(9, 36, 73, 1) 0%, rgba(27, 29, 74, 1) 35%, rgba(5, 19, 47, 1) 100%);
+}
+.main-container {
+	height: 100hv;
+	max-width: 1400px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+.logo span {
+	color: darkgrey;
+	font-family: "Lobster", cursive;
+	font-size: 2rem;
+}
+
+.nav-items {
+	display: flex;
+}
+
+.navbar-container {
+	display: flex;
+	background-color: #000000fe;
+	padding: 20px 10px;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+.ul {
+	display: flex;
+	align-items: center;
+}
+
+.li {
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+.list-item {
+	display: flex;
+	padding: 5px 20px;
+	align-items: center;
+	justify-content: center;
+	border-bottom-width: 0;
+	border-bottom: solid 2px rgba(64, 0, 128, 0);
+	transition: ease-in-out 0.5s;
+}
+
+.list-item:hover {
+	border-bottom: solid 2px rgb(64, 0, 128);
+	border-bottom-width: 50%;
+	cursor: pointer;
+}
+
+.btn-nav-container {
+	display: flex;
+	margin-left: 4em;
+}
+
+.btn-nav-container button {
+	margin-right: 15px;
+	background-color: #000000fe;
+	color: #fff;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: solid 2px rgb(64, 0, 128);
+	border-radius: 5px;
+}
+
+.btn-nav-container button:hover {
+	background-color: rgb(64, 0, 128);
+}
+
+.main-title {
+	color: #fff;
+	padding: 6px;
+	margin: 300px auto;
+}
