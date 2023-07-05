@@ -1,0 +1,135 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-align: center;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	position: relative;
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #000;
+	color: #fff;
+	padding: 15px 50px;
+	box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+li {
+	width: 70px;
+	margin-left: 2rem;
+	padding: 5px;
+}
+
+li a {
+	font-size: 1.3rem;
+	cursor: pointer;
+	padding: 20px 15px;
+	transition: 0.5s ease-in-out;
+	color: #fff;
+	border-bottom: 0;
+}
+
+li a:hover {
+	color: chocolate;
+	border-bottom: 2px chocolate solid;
+	transition: 0.5s ease-in-out;
+}
+
+.hide {
+	top: 65px;
+}
+
+@media screen and (max-width: 700px) {
+	.hamburger {
+		display: inline-block;
+		flex-direction: column;
+		background-color: #1b1a1a;
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+		padding: 5px;
+		border-radius: 3px;
+		position: absolute;
+		right: 1rem;
+	}
+
+	.lines {
+		display: block;
+		background-color: chocolate;
+		color: #fff;
+		height: 2px;
+		width: 25px;
+		margin-bottom: 5px;
+	}
+
+	.lines-rotate {
+		border-radius: 5px;
+	}
+
+	.hamburger .lines:nth-child(2) {
+		width: 80%;
+	}
+
+	.hamburger .lines:last-child {
+		width: 50%;
+	}
+
+	nav {
+		position: relative;
+		padding: 15px 20px;
+	}
+
+	ul {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: -300px;
+		right: 0;
+		background-color: chocolate;
+		padding: 35px 0;
+		border-radius: 0 0 20px 20px;
+		box-shadow: 0 5px 5pxrgba (128, 128, 128, 0.363);
+	}
+
+	li a {
+		color: rgba(12, 11, 11, 0.836);
+		font-size: 1.6rem;
+	}
+
+	li {
+		text-align: center;
+		width: 90vw;
+	}
+
+	li a:hover {
+		font-weight: bold;
+		color: #000;
+		border: none;
+		letter-spacing: 3px;
+	}
+}
